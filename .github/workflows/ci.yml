@@ -30,7 +30,7 @@ jobs:
     # 4. Кодны стандартын шалгалт (Linter)
     # Хэрэв ESLint эсвэл Bun-ий өөрийн linter байгаа бол:
     - name: Run Linter
-      run: bun run lint
+      run: cd apps/todo/todo-service && bun run lint
 
     # 5. Автомат тестүүдийг ажиллуулах
     # Хэрэв bun-ий native тест ашигладаг бол `bun test`, эсвэл vitest/jest-ийг `bun test`-ээр ажиллуулж болно
