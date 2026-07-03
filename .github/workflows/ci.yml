@@ -1,6 +1,8 @@
 name: Pull Request CI Check with Bun
 
 on:
+  push:
+    branches: [main]
   pull_request:
     branches: [ "main", "develop" ]
     types: [ opened, synchronize, reopened ]
